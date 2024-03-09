@@ -38,15 +38,40 @@ body {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+.summary-item,
 .summary-reaction,
 .summary-memory,
 .summary-verbal,
 .summary-visual {
   display: flex;
+  gap: 10px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .summary-item {
   background-color: var(--Paleblue);
   text-align: center;
   margin-bottom: 1rem;
   border-radius: 10px;
+}
+.summary-reaction {
+  color: var(--Lightred);
+  background-color: hsla(0, 100%, 67%, 10%);
+}
+.summary-memory {
+  color: var(--Orangeyyellow);
+  background-color: hsla(39, 100%, 56%, 10%);
+}
+.summary-verbal {
+  color: var(--Greenteal);
+  background-color: hsl(166, 100%, 37%, 10%);
+}
+.summary-visual {
+  color: var(--Cobaltblue);
+  background-color: hsl(234, 85%, 45%, 10%);
+}
+
+.out-of {
+  justify-content: right;
+  align-self: flex-end;
 }

@@ -8,10 +8,9 @@ function giveMe(func) {
         container[i].innerHTML = `${data[i].score}`;
         console.log(container[i]);
       }
+      func();
     })
     .catch((error) => console.error("Error fetching data:", error));
-
-  func();
 }
 
 function giveScore() {
