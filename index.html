@@ -30,7 +30,11 @@
     <div class="card">
       <section class="card-section-1">
         <h2>Your Result</h2>
-        <div class="circle-score">76 of 100</div>
+        <div class="cicrcle-score">
+          <div id="result-score"><p>100</p></div>
+          <p class="out-of">of 100</p>
+        </div>
+        <!-- result score should calculate summy scores and give the avarage  -->
         <h1>Great</h1>
         <p>
           You scored higher than 65% of the people who have taken these tests.
@@ -38,26 +42,31 @@
       </section>
       <section class="card-section-2">
         <div><h1>Summary</h1></div>
+        <!-- all scores in the summary should be pulled from the jason file -->
         <div class="summary-box">
-          <div class="summary-reaction">
+          <div class="summary-item summary-reaction">
             <img class="img" src="assets/images/icon-reaction.svg" />
             <p class="category">Reaction</p>
-            <p class="score">80 / 100</p>
+            <p class="sum-score" id="score1">666</p>
+            <p class="out-of">/ 100</p>
           </div>
-          <div class="summary-memory">
+          <div class="summary-item summary-memory">
             <img class="img" src="assets/images/icon-memory.svg" />
             <p class="category">Memory</p>
-            <p class="score">92 / 100</p>
+            <p class="sum-score" id="score2">777</p>
+            <p class="out-of">/ 100</p>
           </div>
-          <div class="summary-verbal">
+          <div class="summary-item summary-verbal">
             <img class="img" src="assets/images/icon-verbal.svg" />
             <p class="category">Verbal</p>
-            <p class="score">61 / 100</p>
+            <p class="sum-score" id="score3">888</p>
+            <p class="out-of">/ 100</p>
           </div>
-          <div class="summary-visual">
+          <div class="summary-item summary-visual">
             <img class="img" src="assets/images/icon-visual.svg" />
             <p class="category">Visual</p>
-            <p class="score">72 / 100</p>
+            <p class="sum-score" id="score4">999</p>
+            <p class="out-of">/ 100</p>
           </div>
           <p class="btn">Continue</p>
         </div>
@@ -70,6 +79,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
-    <script src="script.js"></script>
+    <script type="module" src="script.mjs"></script>
   </body>
 </html>

@@ -28,9 +28,25 @@ body {
   max-width: 400px;
   text-align: center;
 }
+.card-section-1 {
+  color: var(--White);
+  background-image: linear-gradient(
+    hsl(252, 100%, 67%),
+    hsla(256, 72%, 46%, 1),
+    hsl(241, 81%, 54%)
+  );
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
 .summary-reaction,
 .summary-memory,
 .summary-verbal,
 .summary-visual {
   display: flex;
+}
+.summary-item {
+  background-color: var(--Paleblue);
+  text-align: center;
+  margin-bottom: 1rem;
+  border-radius: 10px;
 }
