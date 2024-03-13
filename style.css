@@ -13,7 +13,9 @@
   --Paleblue: hsl(221, 100%, 96%);
   --Lightlavender: hsl(241, 100%, 89%);
   --Darkgrayblue: hsl(224, 30%, 27%);
+  box-sizing: border-box;
 }
+
 @font-face {
   font-family: "hanken-grotesk";
   src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
@@ -25,20 +27,39 @@ body {
   padding: 0;
 }
 .card {
-  max-width: 400px;
+  max-width: 375px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-section-2 div h1 {
+  text-align: left;
+}
+.card-section-2 {
+  padding-left: 2rem;
+}
+.description {
+  padding-bottom: 1rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
 }
 .card-section-1 {
+  padding-top: 1rem;
   color: var(--White);
   background-image: linear-gradient(
     hsl(252, 100%, 67%),
     hsla(256, 72%, 46%, 1),
     hsl(241, 81%, 54%)
   );
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  h2 {
+    color: var(--Paleblue);
+    font-weight: 500;
+    font-size: 1rem;
+  }
 }
-.summary-item,
+
 .summary-reaction,
 .summary-memory,
 .summary-verbal,
@@ -56,22 +77,115 @@ body {
 }
 .summary-reaction {
   color: var(--Lightred);
+  background-color: hsla(0, 100%, 67%, 5%);
+  border: 1px solid hsla(0, 100%, 67%, 15%);
+}
+.summary-reaction:hover {
   background-color: hsla(0, 100%, 67%, 10%);
 }
 .summary-memory {
   color: var(--Orangeyyellow);
+  background-color: hsla(39, 100%, 56%, 5%);
+  border: 1px solid hsla(39, 100%, 56%, 15%);
+}
+.summary-memory:hover {
   background-color: hsla(39, 100%, 56%, 10%);
 }
 .summary-verbal {
   color: var(--Greenteal);
+  border: 1px solid hsl(166, 100%, 37%, 15%);
+  background-color: hsl(166, 100%, 37%, 5%);
+}
+.summary-verbal:hover {
   background-color: hsl(166, 100%, 37%, 10%);
 }
 .summary-visual {
   color: var(--Cobaltblue);
+  background-color: hsl(234, 85%, 45%, 5%);
+  border: 1px solid hsla(234, 85%, 45%, 15%);
+}
+.summary-visual:hover {
   background-color: hsl(234, 85%, 45%, 10%);
 }
 
-.out-of {
-  justify-content: right;
-  align-self: flex-end;
+.score {
+  margin-left: auto;
+  .sum-score {
+    color: var(--Darkgrayblue);
+    font-weight: 800;
+  }
+  .out-of {
+    color: hsl(222, 7%, 61%);
+    font-weight: 800;
+  }
+}
+
+.summary-reaction,
+.summary-memory,
+.summary-verbal,
+.summary-visual {
+  display: flex;
+}
+.summary-reaction div,
+.summary-memory div,
+.summary-verbal div,
+.summary-visual div {
+  align-self: center;
+  display: inline-block;
+}
+
+.btn {
+  background-color: var(--Darkgrayblue);
+  border: 3px solid var(--Darkgrayblue);
+  padding: 1rem;
+  border-radius: 50px;
+  color: var(--White);
+  font-weight: 700;
+}
+.btn:hover {
+  background-color: var(--Lightroyalblue);
+  border: 3px solid hsl(244, 96%, 48%);
+}
+
+.circle-score {
+  display: inline-block;
+  background-image: linear-gradient(
+    hsl(252, 100%, 67%),
+    hsla(256, 72%, 46%, 1),
+    hsl(241, 81%, 54%)
+  );
+  padding: 2rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  .result-score {
+    font-size: 3rem;
+  }
+  .of100 {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .card {
+    display: flex;
+    border-radius: 25px;
+    max-width: 750px;
+    text-align: center;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    box-shadow: 10px 5px 5px hsla(241, 81%, 54%, 20%);
+  }
+  .card-section-1 {
+    max-width: 375px;
+    border-radius: 25px;
+  }
+  .card-section-2 {
+    max-width: 375px;
+    flex-grow: 1;
+    padding: 1rem;
+  }
+  .description {
+    margin-top: 3rem;
+  }
 }

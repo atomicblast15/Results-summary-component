@@ -30,13 +30,13 @@
     <div class="card">
       <section class="card-section-1">
         <h2>Your Result</h2>
-        <div class="cicrcle-score">
-          <div id="result-score"><p>100</p></div>
-          <p class="out-of">of 100</p>
+        <div class="circle-score">
+          <div class="result-score" id="result-score"><p>100</p></div>
+          <p class="of100">of 100</p>
         </div>
         <!-- result score should calculate summy scores and give the avarage  -->
         <h1>Great</h1>
-        <p>
+        <p class="description">
           You scored higher than 65% of the people who have taken these tests.
         </p>
       </section>
@@ -45,28 +45,36 @@
         <!-- all scores in the summary should be pulled from the jason file -->
         <div class="summary-box">
           <div class="summary-item summary-reaction">
-            <img class="img" src="assets/images/icon-reaction.svg" />
-            <p class="category">Reaction</p>
-            <p class="sum-score" id="score1">666</p>
-            <p class="out-of">/ 100</p>
+            <div><img class="img" src="assets/images/icon-reaction.svg" /></div>
+            <div><p class="category">Reaction</p></div>
+            <div class="score">
+              <div><p class="sum-score" id="score1">666</p></div>
+              <div class="out-of"><p>/ 100</p></div>
+            </div>
           </div>
           <div class="summary-item summary-memory">
-            <img class="img" src="assets/images/icon-memory.svg" />
-            <p class="category">Memory</p>
-            <p class="sum-score" id="score2">777</p>
-            <p class="out-of">/ 100</p>
+            <div><img class="img" src="assets/images/icon-memory.svg" /></div>
+            <div><p class="category">Memory</p></div>
+            <div class="score">
+              <div><p class="sum-score" id="score2">777</p></div>
+              <div class="out-of"><p>/ 100</p></div>
+            </div>
           </div>
           <div class="summary-item summary-verbal">
-            <img class="img" src="assets/images/icon-verbal.svg" />
-            <p class="category">Verbal</p>
-            <p class="sum-score" id="score3">888</p>
-            <p class="out-of">/ 100</p>
+            <div><img class="img" src="assets/images/icon-verbal.svg" /></div>
+            <div><p class="category">Verbal</p></div>
+            <div class="score">
+              <div><p class="sum-score" id="score3">888</p></div>
+              <div class="out-of"><p>/ 100</p></div>
+            </div>
           </div>
           <div class="summary-item summary-visual">
-            <img class="img" src="assets/images/icon-visual.svg" />
-            <p class="category">Visual</p>
-            <p class="sum-score" id="score4">999</p>
-            <p class="out-of">/ 100</p>
+            <div><img class="img" src="assets/images/icon-visual.svg" /></div>
+            <div><p class="category">Visual</p></div>
+            <div class="score">
+              <div><p class="sum-score" id="score4">999</p></div>
+              <div class="out-of"><p>/ 100</p></div>
+            </div>
           </div>
           <p class="btn">Continue</p>
         </div>
